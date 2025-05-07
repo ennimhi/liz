@@ -30,7 +30,7 @@
       font-size: 1.4em;
       max-width: 600px;
       padding: 0 20px;
-      animation: fadeIn 3s ease-in-out;
+      animation: fadeI3s ease-in-out;
     }
 
     .photo {
@@ -113,12 +113,27 @@
 <body>
   <h1>For Elizabeth Chavez 💕</h1>
   <p>
-    My Vomit Queen, you’re truly special to me. I made this page to remind you that you’re a nigger, that you're a beaner, and a jigaboo. This little piece of the internet is all yours. 💗
+    Elizabeth, you’re truly special to me. I made this page to remind you that you’re loved, appreciated, and beautiful in every way. This little piece of the internet is all yours. 💗
   </p>
 
   <!-- 🔽 Replace the URL below with your photo or her avatar -->
-  <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.15752-9/494357324_1831607317691014_6684927702417880650_n.jpg?stp=dst-jpg_p480x480_tt6&_nc_cat=104&ccb=1-7&_nc_sid=0024fc&_nc_ohc=G744Eh5bHPYQ7kNvwFAQ5k2&_nc_oc=AdkR8od1a6qcwIsEQ359BojSrIXxrxIKX_eGTJ-isA7h6kla-LQ2xF0d46FI204U_LY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lax3-1.xx&oh=03_Q7cD2QF8phSJo6QbeYbeWxdbRym55hdMzFAiUZERugH7KWm3Qg&oe=6842462E" alt="Elizabeth Avatar" class="photo">
-  <!-- Example: https://www.roblox.com/headshot-thumbnail/image?userId=6049896335&width=420&height=420&format=png -->
+  <img src="https://i.imgur.com/zi0JgWB.png" alt="Elizabeth Avatar" class="photo">
+  <!-- Example: https://www.roblox.com/headshot-thumbnail/image?userId=262234365&width=420&height=420&format=png -->
+
+  <div style="margin-top: 20px;">
+    <button onclick="showMessage()">💌 Secret Message</button>
+    <button onclick="changeBG()">🎨 Change Background</button>
+  </div>
+
+  <!-- Hidden message -->
+  <p id="secret" style="display:none; font-style: italic; color: #ff1493; margin-top: 15px;">
+    You're the sunshine that lights up my world, Elizabeth 💖
+  </p>
+
+  <!-- YouTube Embed for Romantic Song (your song) -->
+  <div id="song-container" style="display:none; margin-top: 20px;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/bK1QJ_cTJUE?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
 
   <div class="hearts">
     <script>
@@ -130,7 +145,16 @@
         heart.style.animationDelay = Math.random() * 10 + "s";
         document.querySelector(".hearts").appendChild(heart);
       }
+
+      function showMessage() {
+        document.getElementById("secret").style.display = "block";
+      }
+
+      function changeBG() {
+        document.body.style.background = "linear-gradient(to bottom right, #ffc0cb, #ffe6f0)";
+      }
     </script>
   </div>
 </body>
 </html>
+
