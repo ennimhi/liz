@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For Elizabeth Chavez 💖</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(to bottom right, #fff0f5, #ffe0f0);
+      color: #333;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.2em;
+      color: #ff69b4;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    p {
+      font-size: 1.4em;
+      max-width: 600px;
+      padding: 0 20px;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    .photo {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #fff;
+      box-shadow: 0 0 20px #ff69b4;
+      margin-top: 20px;
+      animation: fadeIn 4s ease-in-out;
+    }
+
+    .hearts {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: pink;
+      transform: rotate(45deg);
+      animation: float 10s linear infinite;
+      opacity: 0.6;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: pink;
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -10px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: -10px;
+      top: 0;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) rotate(45deg);
+        opacity: 0;
+      }
+      50% {
+        opacity: 0.8;
+      }
+      100% {
+        transform: translateY(-10vh) rotate(45deg);
+        opacity: 0;
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>For Elizabeth Chavez 💕</h1>
+  <p>
+    My Vomit Queen, you’re truly special to me. I made this page to remind you that you’re a nigger, that you're a beaner, and a jigaboo. This little piece of the internet is all yours. 💗
+  </p>
+
+  <!-- 🔽 Replace the URL below with your photo or her avatar -->
+  <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.15752-9/494357324_1831607317691014_6684927702417880650_n.jpg?stp=dst-jpg_p480x480_tt6&_nc_cat=104&ccb=1-7&_nc_sid=0024fc&_nc_ohc=G744Eh5bHPYQ7kNvwFAQ5k2&_nc_oc=AdkR8od1a6qcwIsEQ359BojSrIXxrxIKX_eGTJ-isA7h6kla-LQ2xF0d46FI204U_LY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lax3-1.xx&oh=03_Q7cD2QF8phSJo6QbeYbeWxdbRym55hdMzFAiUZERugH7KWm3Qg&oe=6842462E" alt="Elizabeth Avatar" class="photo">
+  <!-- Example: https://www.roblox.com/headshot-thumbnail/image?userId=6049896335&width=420&height=420&format=png -->
+
+  <div class="hearts">
+    <script>
+      for (let i = 0; i < 40; i++) {
+        const heart = document.createElement("div");
+        heart.className = "heart";
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.animationDuration = 5 + Math.random() * 5 + "s";
+        heart.style.animationDelay = Math.random() * 10 + "s";
+        document.querySelector(".hearts").appendChild(heart);
+      }
+    </script>
+  </div>
+</body>
+</html>
